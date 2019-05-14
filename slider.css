@@ -1,0 +1,73 @@
+html,body{
+height:100%;
+width:100%;
+margin:0;
+pading:0;
+}
+.wrap{
+height:100%;
+width:100%;
+position:relative;
+overflow:hidden;
+color:#fff;
+text-aling:centre;
+background:#120103;
+
+
+}
+header{
+background:#3E474f;
+box-shadow: 0.5em 1em #111;
+position:absolute;
+top:0;
+left:0;
+z-index:900;
+width:100%;
+}
+
+header label{
+color:#788188;
+cursor: pointer;
+display:inline-block;
+line-height: 4.25em;
+font-size:1em;
+font-weight:bold;
+padding:0 1 em;
+}
+header label hover{
+background:#2e35b;
+}
+
+
+.slide{
+height:100%;
+width:100%;
+position:absolute;
+top:0;
+left:100%;
+z-index:10;
+padding:8em 1em 0;
+background-color:#120103;
+background-position:50% 50%;
+background-size:cover;
+transition:left 0s .75s;
+
+}
+.slide-one{
+background-image: url('https://pp.userapi.com/c627122/v627122505/28ee5/ZtUNzQHLET0.jpg?ava=1');
+}
+.slide-two{
+background-image: url('https://vchemraznica.ru/wp-content/uploads/2017/02/keeram112.jpg');
+}
+.slide-three{
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2yhnlZLW8b-IX4x17cFM3SRxz6XfdgKouWSmxKD3l0n1qcx7');
+}
+.slide-four{
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUFTtXqkapa3diASuo3MYbxgJwNIKFNqVuOLH3XdyBycQMrBgG');
+}
+[id^='slide']:checked + .slide{
+left:0;
+z-index:80;
+transition:left .65s ease-out;
+}
+}
